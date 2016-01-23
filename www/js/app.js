@@ -43,46 +43,86 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.menu', {
+    url: '/menu',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-menu': {
+        templateUrl: 'templates/tab-menu.html',
+        controller: 'MenuCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
-
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.shop', {
+    url: '/shop',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-shop': {
+        templateUrl: 'templates/tab-shop.html',
+        controller: 'ShopCtrl'
+      }
+    }
+  })
+
+  .state('tab.cart', {
+    url: '/cart',
+    views: {
+      'tab-cart': {
+        templateUrl: 'templates/tab-cart.html',
+        controller: 'CartCtrl'
+      }
+    }
+  })
+
+  .state('tab.tools', {
+    url: '/tools',
+    views: {
+      'tab-tools': {
+        templateUrl: 'templates/tab-tools.html',
+        controller: 'ToolsCtrl'
+      }
+    }
+  })
+
+  .state('tab.mylowes-signin', {
+    url: '/mylowes-signin',
+    views: {
+      'tab-mylowes-signin': {
+        templateUrl: 'templates/tab-mylowes-signin.html',
+        controller: 'MyLowesSignInCtrl'
       }
     }
   });
 
+  // .state('tab.chats', {
+  //     url: '/chats',
+  //     views: {
+  //       'tab-chats': {
+  //         templateUrl: 'templates/tab-chats.html',
+  //         controller: 'ChatsCtrl'
+  //       }
+  //     }
+  //   })
+  //   .state('tab.chat-detail', {
+  //     url: '/chats/:chatId',
+  //     views: {
+  //       'tab-chats': {
+  //         templateUrl: 'templates/chat-detail.html',
+  //         controller: 'ChatDetailCtrl'
+  //       }
+  //     }
+  //   })
+
+  // .state('tab.account', {
+  //   url: '/account',
+  //   views: {
+  //     'tab-account': {
+  //       templateUrl: 'templates/tab-account.html',
+  //       controller: 'AccountCtrl'
+  //     }
+  //   }
+  // });
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/mylowes-signin');
 
 });
