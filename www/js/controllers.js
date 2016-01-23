@@ -8,7 +8,9 @@ angular.module('starter.controllers', [])
 
 .controller('ToolsCtrl', function($scope) {})
 
-.controller('MyLowesSignInCtrl', function($scope) {});
+.controller('MyLowesSignInCtrl', function($scope) {})
+
+.controller('MyLowesSignUpCtrl', function($scope) {});
 
 // .controller('ChatsCtrl', function($scope, Chats) {
 //   // With the new view caching in Ionic, Controllers are only called

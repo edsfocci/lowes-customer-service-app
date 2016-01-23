@@ -86,9 +86,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('tab.mylowes-signin', {
     url: '/mylowes-signin',
     views: {
-      'tab-mylowes-signin': {
-        templateUrl: 'templates/tab-mylowes-signin.html',
+      'mylowes': {
+        templateUrl: 'templates/mylowes-signin.html',
         controller: 'MyLowesSignInCtrl'
+      }
+    }
+  })
+
+  .state('tab.mylowes-signup', {
+    url: '/mylowes-signup',
+    views: {
+      'mylowes': {
+        templateUrl: 'templates/mylowes-signup.html',
+        controller: 'MyLowesSignUpCtrl'
       }
     }
   });
